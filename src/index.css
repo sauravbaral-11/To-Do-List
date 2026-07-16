@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.to-do-list {
+  background: #ffffff;
+  width: 500px;
+  max-width: 90%;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.to-do-list h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 25px;
+  font-size: 2rem;
+}
+
+.to-do-list input {
+  width: 70%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.to-do-list input:focus {
+  border-color: #2575fc;
+}
+
+.to-do-list button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.to-do-list > button {
+  margin-left: 10px;
+  background: #2575fc;
+}
+
+.to-do-list > button:hover {
+  background: #1b5fd1;
+}
+
+ol {
+  margin-top: 25px;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  background: #f5f5f5;
+  padding: 15px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.text {
+  flex: 1;
+  font-size: 18px;
+  color: #333;
+  word-break: break-word;
+}
+
+.del-btn {
+  background: #e74c3c;
+  color: black;
+}
+
+.del-btn:hover {
+  background: #c0392b;
+  color: black;
+}
+
+.up-btn {
+  background: #27ae60;
+  color: black;
+}
+
+.up-btn:hover {
+  background: #1f8a4c;
+  color: black;
+}
+
+.down-btn {
+  background: #f39c12;
+  color: black;
+}
+
+.down-btn:hover {
+  background: #d68910;
+  color: black;
+}
+
+@media (max-width: 600px) {
+  .to-do-list {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .to-do-list input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .to-do-list > button {
+    width: 100%;
+    margin: 0;
+  }
+
+  li {
+    flex-wrap: wrap;
+  }
+
+  .text {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+.input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-container input {
+  flex: 1;
+}
+
+.input-container button {
+  background: #2575fc;
+}
+
+.input-container button:hover {
+  background: #1b5fd1;
+}
